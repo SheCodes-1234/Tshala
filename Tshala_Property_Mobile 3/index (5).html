@@ -1,0 +1,667 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#073F2D">
+<title>Tshala Property Investment Firm | Build Wealth Through Property</title>
+<meta name="description" content="Tshala Property Investment Firm helps individuals build wealth through strategically selected property investments.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&family=Playfair+Display:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+ --green:#073F2D;--deep:#03291E;--green2:#0C5A40;--gold:#C9A227;--gold2:#E7C75A;
+ --cream:#F5F1E7;--paper:#FBFAF6;--ink:#17241E;--muted:#69756F;
+ --line:rgba(7,63,45,.13);--white:#fff;
+}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:"DM Sans",sans-serif}
+a{text-decoration:none;color:inherit}button{font:inherit;cursor:pointer}
+.container{width:min(1200px,calc(100% - 48px));margin:auto}
+.top{height:34px;background:var(--deep);color:#bfc9c3;display:flex;align-items:center;justify-content:center;font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+.nav{height:88px;position:sticky;top:0;z-index:100;background:rgba(251,250,246,.92);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+.navin{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:center;gap:12px}.brand img{width:52px;height:52px;border-radius:50%;object-fit:cover}
+.brandtext{font-family:"Manrope";font-weight:700;font-size:19px;letter-spacing:-.04em;color:var(--green)}
+.brandtext small{display:block;font:600 8px "DM Sans";letter-spacing:.21em;text-transform:uppercase;color:#77837d;margin-top:2px}
+.links{display:flex;gap:34px;font-size:12px;color:#516058}.links a:hover{color:var(--green)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:2px;border:1px solid transparent;padding:14px 20px;font-size:11px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;transition:.2s}
+.btn.gold{background:var(--gold);color:var(--deep)}.btn.gold:hover{background:var(--gold2);transform:translateY(-1px)}
+.btn.dark{background:var(--green);color:white}.btn.dark:hover{background:var(--green2);transform:translateY(-1px)}
+.btn.line{border-color:rgba(255,255,255,.3);color:white}.btn.line:hover{background:rgba(255,255,255,.08)}
+.hero{min-height:760px;background:
+linear-gradient(90deg,rgba(3,41,30,.97) 0%,rgba(3,41,30,.88) 46%,rgba(3,41,30,.38) 100%),
+url("assets/luxury_hillside_villa.png") center/cover;
+color:white;position:relative;overflow:hidden;display:flex;align-items:center}
+.hero:before{content:"";position:absolute;width:720px;height:720px;border:1px solid rgba(209,180,106,.16);border-radius:50%;right:-230px;top:-170px;box-shadow:0 0 0 70px rgba(209,180,106,.025),0 0 0 150px rgba(209,180,106,.018)}
+.hero:after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 75% 50%,rgba(209,180,106,.13),transparent 27%);pointer-events:none}
+.hero .container{position:relative;z-index:2}
+.heroGrid{display:grid;grid-template-columns:minmax(0,820px);gap:64px;align-items:center;max-width:1200px;width:100%}
+.heroCopyBlock{position:relative;z-index:3}
+.heroMedia{position:relative;min-height:520px}
+.heroImageMain{grid-row:1 / span 2;position:relative;overflow:hidden;border:1px solid rgba(232,215,159,.3);background:#0b5039}
+.heroImageMain img,.heroImageSmall img,.heroImageAccent img{width:100%;height:100%;object-fit:cover;display:block}
+.heroImageMain:after,.heroImageSmall:after,.heroImageAccent:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,41,30,.02),rgba(3,41,30,.62))}
+.heroMediaCaption{position:absolute;left:24px;right:24px;bottom:23px;z-index:2;color:#fff}
+.heroMediaCaption span,.heroVideoMiniContent span{display:block;font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);font-weight:800;margin-bottom:7px}
+.heroMediaCaption strong{display:block;font:500 25px/1.08 "Playfair Display";max-width:300px}
+.heroImageSmall{position:relative;overflow:hidden;border:1px solid rgba(232,215,159,.3)}
+.heroVideoMini{position:relative;overflow:hidden;border:1px solid rgba(232,215,159,.3);background:#062f22;min-width:0}
+.heroVideoMini video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.heroVideoMiniShade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,41,30,.9),rgba(3,41,30,.1) 65%);pointer-events:none}
+.heroVideoMiniContent{position:absolute;left:17px;right:17px;bottom:16px;z-index:2;color:#fff;pointer-events:none}
+.heroVideoMiniContent strong{display:block;font:500 22px/1.05 "Playfair Display"}
+.heroVideoMiniContent small{display:block;margin-top:6px;font-size:9px;color:rgba(255,255,255,.68)}
+.heroImageAccent{position:absolute;right:-20px;bottom:-20px;width:115px;height:95px;border:5px solid #073f2d;box-shadow:0 12px 35px rgba(0,0,0,.25);overflow:hidden;z-index:4}
+.heroImageAccent img{object-position:center}
+.eyebrow{font-size:10px;letter-spacing:.23em;text-transform:uppercase;color:var(--gold2);font-weight:800;margin-bottom:23px}
+h1{font:500 clamp(58px,7vw,91px)/.94 "Playfair Display";letter-spacing:-.055em;margin:0;max-width:800px}
+h1 em{font-style:normal;color:var(--gold2)}
+.heroText{font-size:16px;line-height:1.8;color:rgba(255,255,255,.68);max-width:610px;margin:28px 0 0}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.note{font-size:10px;color:rgba(255,255,255,.43);max-width:510px;margin-top:19px}
+.heroCard{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.055);padding:34px;backdrop-filter:blur(10px)}
+.heroCard .label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.heroCard h2{font:500 34px/1.12 "Playfair Display";margin:14px 0 17px}
+.heroCard p{font-size:12px;line-height:1.7;color:rgba(255,255,255,.6)}
+.rule{height:1px;background:rgba(255,255,255,.13);margin:25px 0}
+.stat{display:flex;justify-content:space-between;gap:15px;font-size:11px}.stat strong{color:var(--gold2);font-weight:600}
+.section{padding:105px 0}.cream{background:var(--cream)}.dark{background:var(--green);color:white}
+.kicker{font-size:10px;letter-spacing:.21em;text-transform:uppercase;color:#9A7414;font-weight:800;margin-bottom:14px}.dark .kicker{color:var(--gold2)}
+h2.title{font:500 clamp(40px,5vw,62px)/1.04 "Playfair Display";letter-spacing:-.045em;margin:0}
+.copy{color:var(--muted);font-size:15px;line-height:1.75;max-width:690px;margin-top:17px}.dark .copy{color:rgba(255,255,255,.63)}
+.about{display:grid;grid-template-columns:.75fr 1.25fr;gap:100px}.quote{font:500 30px/1.2 "Playfair Display";color:var(--green)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);margin-top:58px}
+.card{background:var(--paper);padding:34px;min-height:240px}.cardNum{font:500 31px "Playfair Display";color:var(--gold);margin-bottom:42px}.card h3{font:700 17px "Manrope";margin:0 0 9px}.card p{font-size:12px;color:var(--muted);line-height:1.7}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);margin-top:62px;border-top:1px solid rgba(255,255,255,.16)}
+.step{padding:30px 24px 0 0;margin-right:24px;border-right:1px solid rgba(255,255,255,.16)}.step:last-child{border:0}
+.stepNum{font-size:10px;color:var(--gold2);letter-spacing:.2em}.step h3{font:500 26px "Playfair Display";margin:17px 0 8px}.step p{font-size:12px;color:rgba(255,255,255,.54);max-width:220px}
+.oppsHead{display:flex;justify-content:space-between;gap:40px;align-items:end}.oppsHead .copy{max-width:500px}
+.opportunity{display:grid;grid-template-columns:1fr 1fr;margin-top:50px;background:white;border:1px solid var(--line);min-height:540px}
+.visual{position:relative;overflow:hidden;background:linear-gradient(135deg,#0b5039,#073523)}
+.visual:before{content:"";position:absolute;inset:30px;border:1px solid rgba(232,215,159,.25)}
+.visual:after{content:"";position:absolute;width:430px;height:430px;border:1px solid rgba(232,215,159,.17);border-radius:50%;right:-150px;top:60px}
+.visualText{position:absolute;left:54px;bottom:48px;color:white;z-index:2}.visualText small{display:block;color:var(--gold2);font-size:9px;letter-spacing:.18em;text-transform:uppercase}.visualText strong{display:block;font:500 45px "Playfair Display";margin-top:8px}
+.oppCopy{padding:60px}.oppCopy h3{font:500 39px/1.08 "Playfair Display";margin:0}.oppCopy p{font-size:13px;color:var(--muted);line-height:1.7;margin:16px 0}
+.placeholder{border-left:2px solid var(--gold);background:var(--cream);padding:15px;font-size:11px;color:#66726b;margin:25px 0}
+.data{border-top:1px solid var(--line)}.dataRow{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font-size:11px}.dataRow span{color:var(--muted)}
+.cta{padding:78px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--cream)}
+.ctaGrid{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:60px}.ctaSide{text-align:right}.mini{font-size:9px;text-transform:uppercase;letter-spacing:.18em;color:#7c877f;margin-bottom:14px}
+.footer{background:var(--deep);color:white;padding:60px 0 24px}.footGrid{display:grid;grid-template-columns:1.3fr .7fr .7fr;gap:60px}.footBrand{font:500 31px "Playfair Display"}.footBrand small{display:block;font:600 8px "DM Sans";letter-spacing:.21em;text-transform:uppercase;color:var(--gold2)}
+.footer p,.footer a{font-size:11px;color:rgba(255,255,255,.52);line-height:1.7}.footer p{max-width:360px;margin-top:12px}.footer h4{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold2);margin:0 0 14px}.footer a{display:block;margin:7px 0}
+.bottom{border-top:1px solid rgba(255,255,255,.1);margin-top:45px;padding-top:17px;display:flex;justify-content:space-between;font-size:9px;color:rgba(255,255,255,.3)}
+.modal{position:fixed;inset:0;background:rgba(0,23,16,.78);backdrop-filter:blur(14px);z-index:999;display:none;padding:18px}.modal.open{display:flex;align-items:center;justify-content:center}
+.modalBox{width:min(1160px,100%);height:min(90vh,920px);background:var(--paper);border:1px solid rgba(209,180,106,.45);box-shadow:0 45px 130px rgba(0,0,0,.5);overflow:hidden}
+.modalHead{height:62px;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 18px 0 24px}.modalTitle{font:500 21px "Playfair Display";color:var(--green)}
+.close{width:38px;height:38px;background:transparent;border:1px solid var(--line);color:var(--green);font-size:20px}.frame{width:100%;height:calc(100% - 62px);border:0}
+@media(max-width:900px){
+.about + div{}
+.links{display:none}.hero{padding:95px 0}.heroGrid,.about,.opportunity,.ctaGrid{grid-template-columns:1fr}.heroVideo{min-height:500px}.heroCard{margin-top:25px}.cards{grid-template-columns:1fr}.steps{grid-template-columns:1fr 1fr}.step:nth-child(2){border-right:0}.oppsHead{display:block}.ctaSide{text-align:left;margin-top:25px}.footGrid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){
+#experience .about + div{grid-template-columns:1fr !important}
+#experience .about + div > div:first-child{min-height:380px}
+#experience .about + div > div:last-child{padding:35px}
+#experience .about ~ div[style*="grid-template-columns:1fr 1fr 1fr"]{grid-template-columns:1fr 1fr !important}
+}
+@media(max-width:600px){.container{width:calc(100% - 30px)}.nav{height:72px}.brand img{width:43px;height:43px}.brandtext{font-size:16px}.nav .btn{padding:11px 12px;font-size:9px}.hero{min-height:auto;padding:72px 0}.heroGrid{gap:35px;grid-template-columns:1fr}h1{font-size:54px}.heroVideo{min-height:430px}.heroVideoContent{left:22px;right:22px;bottom:24px}.heroVideoContent h2{font-size:32px}.actions .btn{width:100%}.section{padding:75px 0}.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:24px;margin-right:0}.oppCopy{padding:35px 25px}.visual{min-height:380px}.footGrid{grid-template-columns:1fr}.bottom{flex-direction:column;gap:7px}.modal{padding:7px}.modalBox{height:94vh}}
+
+.heroVideo{display:block;position:relative;min-height:520px;overflow:hidden;border:1px solid rgba(232,215,159,.28);color:white;background:#062f22}
+.heroVideo video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.heroVideoShade{position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,41,30,.9),rgba(3,41,30,.08) 68%)}
+.heroVideoContent{position:absolute;left:32px;right:32px;bottom:31px;z-index:2}
+.heroVideoContent .label{font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)}
+.heroVideoContent h2{font:500 39px/1.04 "Playfair Display";margin:10px 0 9px}
+.heroVideoContent h2 em{font-style:normal;color:var(--gold2)}
+.heroVideoContent p{font-size:11px;color:rgba(255,255,255,.68)}
+.videoLink{display:inline-block;margin-top:18px;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--gold2)}
+.registrationStrip{background:#fff;border-bottom:1px solid var(--line);padding:18px 0}
+.registrationIn{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.regBadge{display:flex;align-items:center;gap:12px;color:var(--green);font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.regIcon{width:31px;height:31px;border:1px solid var(--gold);display:grid;place-items:center;color:#9A7414;font-family:"Playfair Display";font-size:16px}
+.regNote{font-size:10px;color:var(--muted)}
+.finance{background:var(--paper);padding:75px 0;border-top:1px solid var(--line)}
+.financeHead{display:flex;justify-content:space-between;align-items:end;gap:50px}
+.financeLogos{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:38px}
+.bankCard{background:#fff;border:1px solid var(--line);height:175px;display:flex;align-items:center;justify-content:center;padding:18px;transition:.2s}
+.bankCard:hover{transform:translateY(-2px);border-color:rgba(209,180,106,.7)}
+.bankCard img{max-width:94%;max-height:125px;width:auto;height:auto;object-fit:contain}
+.financeDisclaimer{font-size:10px;color:var(--muted);margin-top:17px;line-height:1.6}
+.consultModal{position:fixed;inset:0;background:rgba(0,23,16,.78);backdrop-filter:blur(14px);z-index:1000;display:none;padding:18px}
+.consultModal.open{display:flex;align-items:center;justify-content:center}
+.consultBox{width:min(560px,100%);background:var(--paper);border:1px solid rgba(209,180,106,.5);padding:35px;position:relative}
+.consultBox h3{font:500 34px "Playfair Display";color:var(--green);margin:0 0 10px}
+.consultBox p{font-size:13px;color:var(--muted);line-height:1.7}
+.consultForm{display:grid;gap:10px;margin-top:22px}
+.consultForm input,.consultForm textarea{width:100%;border:1px solid var(--line);background:white;padding:13px;font:13px "DM Sans";outline:none}
+.consultForm textarea{min-height:90px;resize:vertical}
+.consultForm input:focus,.consultForm textarea:focus{border-color:var(--gold)}
+
+
+@media(max-width:900px){
+.heroVideo{min-height:460px}
+.registrationIn{align-items:flex-start;flex-direction:column}
+.financeHead{display:block}
+.financeLogos{grid-template-columns:1fr 1fr}.bankCard{height:160px}.bankCard img{max-height:108px}
+.ctaSide div[style*="justify-content:flex-end"]{justify-content:flex-start!important}
+}
+@media(max-width:600px){
+.financeLogos{grid-template-columns:1fr}.bankCard{height:150px}.bankCard img{max-height:98px}
+.heroVideoContent h2{font-size:32px}
+}
+
+</style>
+
+<style id="mobile-polish">
+/* ==========================================================================
+   MOBILE LAYER — everything below is scoped to touch/small screens.
+   Desktop (>900px) rendering is untouched.
+   ========================================================================== */
+button,a{touch-action:manipulation}
+/* Preserves the existing desktop rule exactly as it was; mobile no longer relies on it */
+@media(min-width:901px){html,body{overflow-x:hidden}}
+.menuBtn,.mobileMenu{display:none}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*:before,*:after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+@media(hover:none){
+  .btn.gold:hover,.btn.dark:hover,.bankCard:hover{transform:none}
+}
+
+/* Short landscape phones (wider than 900px but very short) */
+@media(max-height:500px) and (max-width:1024px){
+  .nav{position:relative}
+  .hero{min-height:0;padding:56px 0}
+  .section{padding:64px 0}
+}
+
+/* ---------- Tablet & phone (<=900px) ---------- */
+@media(max-width:900px){
+  html{scroll-padding-top:76px}
+  img,video{max-width:100%}
+  .container{width:min(100% - 40px,760px)}
+
+  /* Top strip: allow wrapping instead of overflowing */
+  .top{height:auto;min-height:32px;padding:8px 16px;text-align:center;font-size:10px;line-height:1.45;letter-spacing:.14em}
+
+  /* Navigation: logo left, CTA + menu button right */
+  .nav{height:68px}
+  .navin{justify-content:flex-start;gap:10px;min-width:0}
+  .brand{min-width:0;margin-right:auto}
+  .brand img{width:42px;height:42px;flex:none}
+  .brandtext{font-size:17px;white-space:nowrap}
+  .navin>.btn{white-space:nowrap;min-height:44px;padding:12px 16px;font-size:10px;max-width:none}
+  .menuBtn{display:inline-flex;flex:none;flex-direction:column;align-items:center;justify-content:center;gap:5px;width:44px;height:44px;padding:0;background:transparent;border:1px solid var(--line);border-radius:2px}
+  .menuBtn span{display:block;width:20px;height:2px;background:var(--green);transition:transform .25s ease,opacity .2s ease}
+  .nav.menuOpen .menuBtn span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav.menuOpen .menuBtn span:nth-child(2){opacity:0}
+  .nav.menuOpen .menuBtn span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .mobileMenu{display:block;position:absolute;left:0;right:0;top:100%;background:var(--paper);border-bottom:1px solid var(--line);box-shadow:0 22px 40px rgba(3,41,30,.16);padding:4px 20px 22px;max-height:calc(100vh - 68px);max-height:calc(100dvh - 68px);overflow:auto;overscroll-behavior:contain;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .22s ease,transform .22s ease,visibility 0s linear .22s}
+  .nav.menuOpen .mobileMenu{visibility:visible;opacity:1;transform:none;transition-delay:0s}
+  .mobileMenu a{display:flex;align-items:center;min-height:54px;font:500 20px "Playfair Display";color:var(--green);border-bottom:1px solid var(--line)}
+  .mobileMenu .btn{width:100%;min-height:52px;margin-top:18px;font-size:11px}
+
+  /* Hero */
+  .hero{padding:68px 0 60px;background-image:linear-gradient(180deg,rgba(3,41,30,.95) 0%,rgba(3,41,30,.88) 55%,rgba(3,41,30,.72) 100%),url("assets/luxury_hillside_villa.png");background-size:cover;background-position:62% center}
+  .hero:before{width:460px;height:460px;right:-210px;top:-150px;box-shadow:0 0 0 45px rgba(209,180,106,.025),0 0 0 95px rgba(209,180,106,.018)}
+  .heroGrid{gap:0}
+  .eyebrow{font-size:10px;letter-spacing:.16em;margin-bottom:18px;line-height:1.5}
+  h1{font-size:clamp(38px,9.2vw,60px);line-height:1;letter-spacing:-.045em}
+  .heroText{font-size:16px;line-height:1.7;margin-top:22px}
+  .actions{margin-top:28px}
+  .actions .btn{flex:1 1 220px;min-height:52px;font-size:11px}
+  .note{font-size:11px;line-height:1.55;color:rgba(255,255,255,.62)}
+
+  /* Section rhythm */
+  .section{padding:68px 0}
+  .finance{padding:54px 0}
+  .kicker{font-size:10px;letter-spacing:.18em;margin-bottom:12px;color:#7f5f0f}
+  h2.title{font-size:clamp(32px,9.2vw,44px);line-height:1.08;letter-spacing:-.035em;text-wrap:balance}
+  h2.title br{display:none}
+  .copy{font-size:15px;line-height:1.7;margin-top:14px}
+  .oppsHead .copy,.financeHead .copy{margin-top:14px}
+
+  /* Financing & registration */
+  .financeLogos{grid-template-columns:1fr 1fr;gap:10px;margin-top:28px}
+  .bankCard{min-width:0;height:116px;padding:12px}
+  .bankCard img{max-width:100%;max-height:68px}
+  .financeDisclaimer{font-size:11.5px;line-height:1.6}
+  .registrationStrip{padding:16px 0}
+  .registrationIn{align-items:flex-start;flex-direction:column;gap:10px}
+  .regBadge{font-size:11px}
+  .regNote{font-size:11.5px;line-height:1.5}
+
+  /* About, cards */
+  .about{gap:26px}
+  .quote{font-size:25px;line-height:1.22}
+  .cards{margin-top:34px}
+  .card{min-height:0;padding:26px 24px}
+  .cardNum{font-size:26px;margin-bottom:18px}
+  .card h3{font-size:17px}
+  .card p{font-size:14px;line-height:1.65}
+
+  /* Steps */
+  .steps{margin-top:34px}
+  .step p{max-width:none;font-size:14px;line-height:1.65;color:rgba(255,255,255,.68)}
+  .stepNum{font-size:11px}
+
+  /* Experience */
+  .expSplit{margin-top:36px!important}
+  .expSplit .expImg{min-height:300px!important}
+  .expSplit .expPanel{padding:30px 24px!important}
+  .expPanel h3{font-size:clamp(26px,7.4vw,33px)!important}
+  .expPanel .btn{width:100%!important;min-height:52px}
+  .expThumbs{grid-template-columns:1fr 1fr!important;gap:10px!important;margin-top:10px!important}
+  .expThumbs img{height:190px!important}
+  .expThumbs img:first-child{grid-column:1/-1;height:230px!important}
+
+  /* Opportunity card */
+  .opportunity{margin-top:34px}
+  .visual{min-height:240px}
+  .visual:before{inset:16px}
+  .visual:after{width:300px;height:300px;right:-110px;top:30px}
+  .visualText{left:30px;bottom:30px}
+  .visualText small{font-size:10px}
+  .visualText strong{font-size:36px}
+  .oppCopy{padding:28px 22px}
+  .oppCopy h3{font-size:clamp(27px,7.6vw,34px)}
+  .oppCopy p{font-size:14.5px}
+  .placeholder{font-size:13px;line-height:1.6}
+  .dataRow{font-size:13px;gap:16px}
+  .dataRow strong{text-align:right}
+
+  /* Events */
+  .eventSplit{grid-template-columns:1fr!important;margin-top:34px!important}
+  .eventImg{min-height:360px!important}
+  .eventCap{left:22px!important;right:22px!important;bottom:24px!important}
+  .eventCap>div:first-child{font-size:10px!important}
+  .eventCap h3{font-size:clamp(27px,7.8vw,36px)!important}
+  .eventCap p{font-size:14px!important;line-height:1.6}
+  .eventPanel{padding:34px 22px!important}
+  .eventPanel h3{font-size:clamp(26px,7.2vw,33px)!important}
+  .eventPanel p{font-size:14.5px!important}
+  .eventPanel .stat{font-size:13px}
+  .eventPanel .stat strong{text-align:right}
+  .eventBtns .btn{flex:1 1 180px;min-height:52px}
+  #eventInterestMsg{font-size:13px!important;line-height:1.6}
+
+  /* Journal */
+  .journalGrid{grid-template-columns:1fr!important;gap:10px!important;margin-top:34px!important}
+  .journalTile{min-height:300px!important}
+  .journalCap{padding:24px 22px!important}
+  .journalCap h3{font-size:clamp(23px,6.6vw,28px)!important;line-height:1.15}
+
+  /* CTA */
+  .cta{padding:58px 0}
+  .ctaGrid{gap:26px}
+  .ctaSide{margin-top:0}
+  .mini{font-size:10px}
+  .ctaBtns{flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important}
+  .ctaBtns .btn{width:100%;min-height:52px}
+
+  /* Footer */
+  .footer{padding:46px 0 20px}
+  .footGrid{gap:28px}
+  .footGrid>div:first-child{grid-column:1/-1}
+  .footBrand{font-size:28px}
+  .footer p{font-size:13px;line-height:1.7}
+  .footer h4{font-size:10px;margin-bottom:6px}
+  .footer a{display:flex;align-items:center;min-height:44px;margin:0;font-size:14px}
+  .bottom{font-size:11px;line-height:1.5;color:rgba(255,255,255,.55);margin-top:30px}
+
+  /* Modals: full-screen discovery tool, bottom-sheet consultation form */
+  .modal{padding:0}
+  .modalBox{width:100%;height:100vh;height:100dvh;max-height:none;border:0}
+  .modalHead{height:56px;padding:0 8px 0 18px}
+  .frame{height:calc(100% - 56px)}
+  .modalTitle{font-size:19px}
+  .close{width:44px;height:44px;font-size:22px}
+  .consultModal{padding:0}
+  .consultModal.open{align-items:flex-end}
+  .consultBox{width:100%;max-height:92vh;max-height:92dvh;overflow:auto;overscroll-behavior:contain;border-width:1px 0 0;padding:28px 20px calc(24px + env(safe-area-inset-bottom,0px))}
+  .consultBox .close{right:8px!important;top:8px!important}
+  .consultBox h3{font-size:30px;padding-right:44px}
+  .consultBox p{font-size:14.5px}
+  .consultForm{gap:12px}
+  .consultForm input,.consultForm textarea{font-size:16px;min-height:52px;padding:14px}
+  .consultForm textarea{min-height:112px}
+  .consultForm .btn{min-height:52px;font-size:11px}
+  #consultSuccess{font-size:14px!important;line-height:1.6}
+
+  /* Keyboard focus visibility */
+  a:focus-visible,button:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+  .consultForm input:focus-visible,.consultForm textarea:focus-visible{box-shadow:0 0 0 3px rgba(201,162,39,.35)}
+}
+
+/* ---------- Phones (<=600px) ---------- */
+@media(max-width:600px){
+  .container{width:calc(100% - 32px)}
+  .top{letter-spacing:.1em}
+  .nav{height:64px}
+  .brand img{width:40px;height:40px}
+  .navin>.btn{display:none}
+  .menuCta{display:inline-flex}
+  .mobileMenu{max-height:calc(100vh - 64px);max-height:calc(100dvh - 64px);padding:4px 16px 22px}
+  html{scroll-padding-top:72px}
+
+  .hero{padding:52px 0 48px}
+  h1{font-size:clamp(38px,11.6vw,52px);line-height:.99}
+  .heroText{font-size:15px;line-height:1.65;margin-top:20px}
+  .actions{flex-direction:column;gap:10px;margin-top:26px}
+  .actions .btn{width:100%;flex:none}
+
+  .section{padding:60px 0}
+  .finance{padding:48px 0}
+  .step{display:grid;grid-template-columns:36px 1fr;column-gap:14px;align-items:baseline;padding:22px 0}
+  .step:last-child{padding-bottom:0}
+  .stepNum{grid-row:1/3}
+  .step h3{font-size:24px;margin:0 0 6px}
+  .step p{margin:0}
+  .expThumbs img{height:170px!important}
+  .expThumbs img:first-child{height:210px!important}
+  .eventBtns .btn{flex:1 1 100%}
+  .consultModal.open{align-items:flex-end}
+}
+@media(min-width:601px) and (max-width:900px){
+  .menuCta{display:none}
+}
+
+/* ---------- Very small phones (<=360px) ---------- */
+@media(max-width:360px){
+  .container{width:calc(100% - 28px)}
+  .top{font-size:9.5px;letter-spacing:.06em;padding:8px 12px}
+  .brandtext{font-size:16px}
+  h1{font-size:37px}
+  .heroText{font-size:14.5px}
+  .quote{font-size:23px}
+  .card{padding:22px 20px}
+  .oppCopy,.eventPanel{padding-left:18px!important;padding-right:18px!important}
+  .bankCard{height:104px}
+  .bankCard img{max-height:58px}
+}
+</style>
+</head>
+<body>
+<div class="top">Tshala Property Investment Firm · Property Investments</div>
+
+<nav class="nav">
+<div class="container navin">
+<a class="brand" href="#home">
+<img src="tshala-logo.png" alt="Tshala Property Investment Firm">
+<div class="brandtext">Tshala<small>property investment firm</small></div>
+</a>
+<div class="links">
+<a href="#about">About</a><a href="#approach">Approach</a><a href="#opportunities">Opportunities</a><a href="#contact">Contact</a>
+</div>
+<button class="btn dark" onclick="openDiagnostic()">Discover your profile ↗</button>
+<button class="menuBtn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+</div>
+<div class="mobileMenu" id="mobileMenu">
+<a href="#about">About</a><a href="#approach">Approach</a><a href="#opportunities">Opportunities</a><a href="#contact">Contact</a>
+<button class="btn dark menuCta" type="button" onclick="setMenu(false);openDiagnostic()">Discover your profile ↗</button>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="container heroGrid">
+<div class="heroCopyBlock">
+<div class="eyebrow">A considered approach to property investment</div>
+<h1>Build wealth <em>through property.</em></h1>
+<p class="heroText">Tshala Property Investment Firm helps individuals build wealth through strategically selected property investments — creating a clearer path from property interest to investment direction.</p>
+<div class="actions">
+<a class="btn gold" href="#opportunities">Explore Tshala ↗</a>
+<a class="btn line" href="#contact">Book a consultation ↗</a>
+</div>
+<div class="note">Tshala's detailed investment model, active portfolio and differentiators will be added as the company's final information is confirmed.</div>
+</div>
+
+</div>
+</section>
+<section class="finance" id="financing">
+<div class="container">
+<div class="financeHead">
+<div>
+<div class="kicker">06 · Financing</div>
+<h2 class="title">Financing options<br>for your property journey.</h2>
+</div>
+<p class="copy">Financing provided by Nedbank, Standard Bank, Investec and Capitec, subject to the relevant application, assessment and approval processes.</p>
+</div>
+<div class="financeLogos">
+<div class="bankCard"><img loading="lazy" decoding="async" src="assets/nedbank-logo.png" alt="Nedbank"></div>
+<div class="bankCard"><img loading="lazy" decoding="async" src="assets/standard-bank-logo.png" alt="Standard Bank"></div>
+<div class="bankCard"><img loading="lazy" decoding="async" src="assets/investec-logo.png" alt="Investec"></div>
+<div class="bankCard"><img loading="lazy" decoding="async" src="assets/capitec-logo.png" alt="Capitec"></div>
+</div>
+<div class="financeDisclaimer">Financing is subject to each institution's lending criteria, affordability assessment, documentation and approval. Bank logos are displayed for identification of the financing institutions referenced by Tshala and do not by themselves constitute an endorsement or guarantee of finance.</div>
+</div>
+</section>
+
+<section class="registrationStrip">
+<div class="container registrationIn">
+<div class="regBadge"><span class="regIcon">✓</span> Registered Property Practitioner</div>
+<div class="regNote">Professional property services · Tshala Property Investment Firm</div>
+</div>
+</section>
+
+
+
+<section class="section" id="about">
+<div class="container">
+<div class="about">
+<div><div class="kicker">01 · About Tshala</div><div class="quote">A refined way to explore property as part of your wealth journey.</div></div>
+<div><h2 class="title">Strategic property. Clearer decisions.</h2><p class="copy">Tshala Property Investment Firm is a property investment company that helps individuals build wealth through strategically selected property investments.</p><p class="copy"><strong style="color:var(--green)">Business model placeholder:</strong> Tshala is expected to source and connect clients with suitable property opportunities. The precise service model will be confirmed and refined with the client.</p></div>
+</div>
+<div class="cards">
+<div class="card"><div class="cardNum">01</div><h3>Strategic Selection</h3><p>Property opportunities can be presented through an investment lens, with the final selection methodology to be confirmed.</p></div>
+<div class="card"><div class="cardNum">02</div><h3>Guided Discovery</h3><p>The website gives visitors a structured way to understand their position before entering a consultation.</p></div>
+<div class="card"><div class="cardNum">03</div><h3>Long-Term Wealth</h3><p>The central proposition is simple: build wealth through property with a more considered approach.</p></div>
+</div>
+</div>
+</section>
+
+<section class="section dark" id="approach">
+<div class="container">
+<div class="kicker">02 · The Tshala Approach</div>
+<h2 class="title">From property interest<br>to investment direction.</h2>
+<p class="copy">This is a flexible placeholder framework until Tshala confirms its exact client process.</p>
+<div class="steps">
+<div class="step"><div class="stepNum">01</div><h3>Discover</h3><p>Understand the client's goals, position and property ambitions.</p></div>
+<div class="step"><div class="stepNum">02</div><h3>Explore</h3><p>Identify relevant property opportunities and considerations.</p></div>
+<div class="step"><div class="stepNum">03</div><h3>Structure</h3><p>Match the opportunity to the client's requirements.</p></div>
+<div class="step"><div class="stepNum">04</div><h3>Invest</h3><p>Progress toward the selected opportunity and next steps.</p></div>
+</div>
+</div>
+</section>
+
+
+<section class="section" id="experience">
+<div class="container">
+<div class="about">
+<div>
+<div class="kicker">03 · The Tshala Experience</div>
+<div class="quote">A visual language for property, possibility and long-term wealth.</div>
+</div>
+<div>
+<h2 class="title">Property that feels worth investing in.</h2>
+<p class="copy">The Tshala experience brings together carefully selected spaces, considered property thinking and a premium client journey.</p>
+</div>
+</div>
+<div class="expSplit" style="display:grid;grid-template-columns:1.2fr .8fr;gap:1px;background:var(--line);margin-top:55px;border:1px solid var(--line)">
+<div class="expImg" style="min-height:500px;background:url('assets/tshala_villa.png') center/cover"></div>
+<div class="expPanel" style="background:var(--paper);padding:38px;display:flex;flex-direction:column;justify-content:center">
+<div class="kicker">Property perspective</div>
+<h3 style="font:500 35px/1.1 'Playfair Display';margin:0">Designed for the investor who looks beyond the listing.</h3>
+<p class="copy">From architecture and location to the broader investment conversation, Tshala is positioned around helping clients explore property with intention.</p>
+<button class="btn dark" style="width:max-content;margin-top:22px" onclick="openDiagnostic()">Discover your profile ↗</button>
+</div>
+</div>
+<div class="expThumbs" style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px;margin-top:14px">
+<img loading="lazy" decoding="async" src="assets/tshala_seaview.png" alt="Tshala coastal property view" style="width:100%;height:310px;object-fit:cover">
+<img loading="lazy" decoding="async" src="assets/tshala_coastal_view.png" alt="City property investment landscape" style="width:100%;height:310px;object-fit:cover">
+<img loading="lazy" decoding="async" src="assets/deal_handshake.png" alt="Property investment agreement" style="width:100%;height:310px;object-fit:cover">
+</div>
+</div>
+</section>
+
+<section class="section cream" id="opportunities">
+<div class="container">
+<div class="oppsHead"><div><div class="kicker">04 · Investment Opportunities</div><h2 class="title">Selected property.<br>Considered differently.</h2></div><p class="copy">A premium catalogue for Tshala's real opportunities. Property data will be inserted once supplied.</p></div>
+<div class="opportunity">
+<div class="visual"><div class="visualText"><small>Featured opportunity · Placeholder</small><strong>Tshala Select</strong></div></div>
+<div class="oppCopy">
+<div class="kicker">Investment opportunity</div>
+<h3>The future home of Tshala's selected properties.</h3>
+<p>Each opportunity can eventually be presented with the information an investor needs to understand the proposition before requesting a consultation.</p>
+<div class="placeholder">Portfolio placeholder — property name, location, investment value, rental information, projected returns and terms to be confirmed.</div>
+<div class="data">
+<div class="dataRow"><span>Location</span><strong>To be confirmed</strong></div>
+<div class="dataRow"><span>Property type</span><strong>To be confirmed</strong></div>
+<div class="dataRow"><span>Investment value</span><strong>To be confirmed</strong></div>
+<div class="dataRow"><span>Returns / yield</span><strong>To be confirmed</strong></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="section dark" id="events">
+<div class="container">
+<div class="oppsHead">
+<div>
+<div class="kicker">05 · Upcoming Events</div>
+<h2 class="title">Conversations that<br>move wealth forward.</h2>
+</div>
+<p class="copy">Tshala events are designed to create space for meaningful conversations around property, investment and building long-term wealth.</p>
+</div>
+
+<div class="eventSplit" style="display:grid;grid-template-columns:1.1fr .9fr;gap:1px;background:rgba(255,255,255,.14);margin-top:52px">
+<div class="eventImg" style="min-height:500px;background:url('assets/womens_event_reference.jpeg') center/cover;position:relative">
+<div style="position:absolute;inset:0;background:linear-gradient(0deg,rgba(3,41,30,.78),transparent 58%)"></div>
+<div class="eventCap" style="position:absolute;left:34px;right:34px;bottom:30px">
+<div style="font-size:9px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold2)">Upcoming · October 2026</div>
+<h3 style="font:500 40px/1.05 'Playfair Display';margin:8px 0 7px">Women Investing Brighter Futures</h3>
+<p style="font-size:12px;color:rgba(255,255,255,.68);max-width:480px">A Tshala conversation bringing women together around property, investment and building brighter financial futures.</p>
+</div>
+</div>
+
+<div class="eventPanel" style="background:#052f22;padding:52px 42px;display:flex;flex-direction:column;justify-content:center">
+<div class="kicker">Women & Wealth</div>
+<h3 style="font:500 38px/1.08 'Playfair Display';margin:0 0 16px">Invest in knowledge. Build with intention.</h3>
+<p style="font-size:13px;line-height:1.75;color:rgba(255,255,255,.62)">An intimate women-focused property investment event hosted in Sandton, Johannesburg.</p>
+<div style="border-top:1px solid rgba(255,255,255,.15);margin-top:28px;padding-top:8px">
+<div class="stat" style="padding:13px 0"><span>Date</span><strong>October 2026</strong></div>
+<div class="stat" style="padding:13px 0"><span>Location</span><strong>Sandton, Johannesburg</strong></div>
+<div class="stat" style="padding:13px 0"><span>Format</span><strong>Women-focused event</strong></div>
+</div>
+<div class="eventBtns" style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap">
+<button class="btn gold" onclick="eventInterest()">Register interest ↗</button>
+<a class="btn line" href="#contact">Contact Tshala</a>
+</div>
+<p id="eventInterestMsg" style="display:none;color:var(--gold2);font-size:11px;margin-top:14px">Registration details will be announced by Tshala. Your interest has been noted in this prototype.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section class="section cream">
+<div class="container">
+<div class="oppsHead">
+<div>
+<div class="kicker">Tshala Journal</div>
+<h2 class="title">The world around<br>the investment.</h2>
+</div>
+<p class="copy">A visual space for property insights, client stories, events and future Tshala announcements.</p>
+</div>
+<div class="journalGrid" style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:50px">
+<div class="journalTile" style="min-height:420px;background:url('assets/tshala_real_property.jpeg') center/cover;position:relative">
+<div class="journalCap" style="position:absolute;inset:auto 0 0;padding:32px;background:linear-gradient(0deg,rgba(3,41,30,.8),transparent);color:white">
+<div class="kicker" style="color:var(--gold2)">Perspective</div>
+<h3 style="font:500 30px 'Playfair Display';margin:0">A modern approach to building wealth through property.</h3>
+</div>
+</div>
+<div class="journalTile" style="min-height:420px;background:url('assets/tshala_coastal_view.png') center/cover;position:relative">
+<div class="journalCap" style="position:absolute;inset:auto 0 0;padding:32px;background:linear-gradient(0deg,rgba(3,41,30,.8),transparent);color:white">
+<div class="kicker" style="color:var(--gold2)">Partnership</div>
+<h3 style="font:500 30px 'Playfair Display';margin:0">From conversation to a property decision.</h3>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+
+<section class="cta" id="contact">
+<div class="container ctaGrid">
+<div><div class="kicker">07 · Your Investment Starting Point</div><h2 class="title">Not sure where you stand?</h2><p class="copy">Take the Tshala Discovery Tool and answer a short set of questions around your budget, timing, finance and property priorities. The diagnostic opens here as a guided popup.</p></div>
+<div class="ctaSide"><div class="mini">Tshala advisory · Next step</div><div class="ctaBtns" style="display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end"><button class="btn dark" onclick="openConsultation()">Book a consultation ↗</button><button class="btn gold" onclick="openDiagnostic()">Discover your profile ↗</button></div></div>
+</div>
+</section>
+
+<footer class="footer">
+<div class="container">
+<div class="footGrid">
+<div><div class="footBrand">Tshala<small>property investment firm</small></div><p>Build wealth through property. A premium digital experience for Tshala Property Investment Firm.</p></div>
+<div><h4>Explore</h4><a href="#about">About Tshala</a><a href="#approach">Our Approach</a><a href="#opportunities">Investment Opportunities</a></div>
+<div><h4>Connect</h4><a href="#contact">Discovery Tool</a><a href="mailto:info@tshala.co.za">Email Tshala</a></div>
+</div>
+<div class="bottom"><span>© 2026 Tshala Property Investment Firm. All rights reserved.</span><span>Prototype · Client information placeholders marked where applicable.</span></div>
+</div>
+</footer>
+
+
+<div class="consultModal" id="consultationModal">
+<div class="consultBox">
+<button class="close" type="button" aria-label="Close" style="position:absolute;right:18px;top:18px" onclick="closeConsultation()">×</button>
+<div class="kicker">Tshala Consultation</div>
+<h3>Book a consultation.</h3>
+<p>Tell us a little about what you are looking to achieve through property and the Tshala team can follow up with you.</p>
+<form class="consultForm" onsubmit="submitConsultation(event)">
+<input required placeholder="Full name" aria-label="Full name" autocomplete="name">
+<input required type="email" placeholder="Email address" aria-label="Email address" autocomplete="email" inputmode="email">
+<input required type="tel" placeholder="Phone number" aria-label="Phone number" autocomplete="tel" inputmode="tel">
+<textarea placeholder="What would you like to discuss?" aria-label="What would you like to discuss?"></textarea>
+<button class="btn dark" type="submit">Request consultation ↗</button>
+</form>
+<div id="consultSuccess" style="display:none;color:#315c47;font-size:12px;margin-top:14px">Thank you. Your consultation request has been captured in this prototype. Tshala can connect the form to its CRM or booking calendar in production.</div>
+</div>
+</div>
+
+<div class="modal" id="modal">
+<div class="modalBox">
+<div class="modalHead"><div class="modalTitle">Tshala Discovery</div><button class="close" type="button" aria-label="Close" onclick="closeDiagnostic()">×</button></div>
+<iframe class="frame" id="diagnostic" title="Tshala Discovery Tool"></iframe>
+</div>
+</div>
+
+<script>
+
+const consultationModal=document.getElementById("consultationModal");
+function openConsultation(){consultationModal.classList.add("open");document.body.style.overflow="hidden"}
+function closeConsultation(){consultationModal.classList.remove("open");document.body.style.overflow=""}
+function submitConsultation(e){e.preventDefault();document.getElementById("consultSuccess").style.display="block";e.target.querySelectorAll("input,textarea,button").forEach(x=>x.disabled=true)}
+consultationModal.addEventListener("click",e=>{if(e.target===consultationModal)closeConsultation()});
+
+const modal=document.getElementById("modal"),frame=document.getElementById("diagnostic");
+function openDiagnostic(){if(!frame.src)frame.src="tshala-discovery-tool.html";modal.classList.add("open");document.body.style.overflow="hidden"}
+function closeDiagnostic(){modal.classList.remove("open");document.body.style.overflow=""}
+function eventInterest(){
+ const el=document.getElementById("eventInterestMsg");
+ el.style.display="block";
+}
+modal.addEventListener("click",e=>{if(e.target===modal)closeDiagnostic()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeDiagnostic();closeConsultation();setMenu(false)}});
+
+/* Mobile menu */
+const navEl=document.querySelector(".nav"),menuBtn=document.getElementById("menuBtn");
+function setMenu(open){navEl.classList.toggle("menuOpen",open);menuBtn.setAttribute("aria-expanded",open);menuBtn.setAttribute("aria-label",open?"Close menu":"Open menu")}
+menuBtn.addEventListener("click",()=>setMenu(!navEl.classList.contains("menuOpen")));
+document.querySelectorAll("#mobileMenu a").forEach(a=>a.addEventListener("click",()=>setMenu(false)));
+document.addEventListener("click",e=>{if(!navEl.contains(e.target))setMenu(false)});
+window.matchMedia("(min-width:901px)").addEventListener("change",e=>{if(e.matches)setMenu(false)});
+</script>
+</body>
+</html>
